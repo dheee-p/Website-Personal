@@ -79,6 +79,34 @@
             padding: 0 7px;
         }
 
+        .bg-midnight {
+            background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #60a5fa !important;
+            text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 700;
+        }
+
+        .glass-dropdown {
+            background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%) !important;
+        }
+
+        [data-bs-theme="dark"] .bg-midnight {
+            background: linear-gradient(135deg, #1e40af 0%, #020617 100%) !important;
+        }
+
         .slider-round i { 
             font-size: 14px; 
             color: #f1c40f; 
@@ -444,7 +472,7 @@
         </label>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-midnight fixed-top shadow-sm">
         <div class="container">
             <div class="navbar-brand d-flex align-items-center">
                 <img src="foto.jpg" alt="Logo" class="img-zoomable" style="height:38px; width:38px; border-radius:50%; object-fit:cover; margin-right:8px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
@@ -496,7 +524,6 @@
         const themeToggle = document.getElementById('darkModeToggle');
         const htmlElement = document.documentElement;
 
-        // Script Scroll Back to Top
         window.onscroll = function () {
             scrollFunction();
         };
