@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -150,7 +151,7 @@
             transform: translateX(10px);
             background-color: #f0f0f0;
         }
-
+        
         [data-bs-theme="dark"] .social-card:hover {
             background-color: #333 !important;
         }
@@ -600,37 +601,114 @@
                     karakter saya menjadi pribadi yang disiplin, komunikatif, dan mampu beradaptasi cepat dalam berbagai situasi.
                 </p>
                 
-                <div class="row mt-4">
-                    <div class="col-6 mb-3">
-                        <p class="mb-1 text-muted small uppercase fw-bold">Nama Lengkap</p>
-                        <p class="fw-bold mb-0">Adhe Putra Haryanto</p>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <p class="mb-1 text-muted small uppercase fw-bold">Pendidikan</p>
-                        <p class="fw-bold mb-0">S1 Teknik Informatika, Universitas Indraprasta PGRI</p>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <p class="mb-1 text-muted small uppercase fw-bold">Tanggal Lahir</p>
-                        <p class="fw-bold mb-0">11, Juli 2003</p>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <p class="mb-1 text-muted small uppercase fw-bold">Jenis Kelamin</p>
-                        <p class="fw-bold mb-0">Laki-laki</p>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <p class="mb-1 text-muted small uppercase fw-bold">Domisili</p>
-                        <p class="fw-bold mb-0">Jakarta, Indonesia</p>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <p class="mb-1 text-muted small uppercase fw-bold">Hobi</p>
-                        <p class="fw-bold mb-0">Coding, Fotografi, Reading Novel</p>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <p class="mb-1 text-muted small uppercase fw-bold">Pekerjaan / Status</p>
-                        <p class="fw-bold mb-0">Junior Web Developer / Open To Work</p>
+                <div class="col-lg-10"> 
+                    <div class="info-card-relax p-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <p class="label-relax"><i class="fa-solid fa-id-card me-2 text-cyan"></i>Nama Lengkap</p>
+                                    <p class="value-relax">Adhe Putra Haryanto</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <p class="label-relax"><i class="fa-solid fa-graduation-cap me-2 text-cyan"></i>Pendidikan</p>
+                                    <p class="value-relax">S1 Teknik Informatika, Unindra</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <p class="label-relax"><i class="fa-solid fa-calendar-day me-2 text-cyan"></i>Tanggal Lahir</p>
+                                    <p class="value-relax">11 Juli 2003</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <p class="label-relax"><i class="fa-solid fa-location-dot me-2 text-cyan"></i>Domisili</p>
+                                    <p class="value-relax">Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <p class="label-relax"><i class="fa-solid fa-briefcase me-2 text-cyan"></i>Status Pekerjaan</p>
+                                    <p class="value-relax">
+                                        <span class="badge-soft">Junior Web Developer</span>
+                                        <span class="badge-soft-green">Open To Work</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <p class="label-relax"><i class="fa-solid fa-heart me-2 text-cyan"></i>Hobi</p>
+                                    <p class="value-relax">Coding, Fotografi, Reading</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <style>
+                .info-card-relax {
+                    /* Warna Midnight Blue yang rileks dan elegan */
+                    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+                    border-radius: 20px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                    color: white;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(5px);
+                }
+
+                .label-relax {
+                    font-size: 0.7rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #94a3b8; /* Warna abu-abu kebiruan agar tidak silau */
+                    margin-bottom: 2px;
+                    letter-spacing: 0.8px;
+                }
+
+                .value-relax {
+                    font-weight: 600;
+                    color: #f8fafc; /* Warna putih tulang yang lembut di mata */
+                    margin-bottom: 0;
+                    font-size: 0.95rem;
+                }
+
+                .badge-soft {
+                    font-size: 0.7rem;
+                    padding: 4px 12px;
+                    border-radius: 50px;
+                    font-weight: 600;
+                    background: rgba(56, 189, 248, 0.15); /* Biru transparan */
+                    color: #7dd3fc;
+                    border: 1px solid rgba(56, 189, 248, 0.2);
+                    display: inline-block;
+                    margin-top: 5px;
+                }
+
+                .badge-soft-green {
+                    font-size: 0.7rem;
+                    padding: 4px 12px;
+                    border-radius: 50px;
+                    font-weight: 600;
+                    background: rgba(34, 197, 94, 0.15); /* Hijau transparan */
+                    color: #86efac;
+                    border: 1px solid rgba(34, 197, 94, 0.2);
+                    display: inline-block;
+                    margin-top: 5px;
+                    margin-left: 5px;
+                }
+
+                .text-cyan {
+                    color: #38bdf8 !important; /* Warna ikon biru muda yang kalem */
+                }
+
+                .info-card-relax:hover {
+                    border: 1px solid rgba(56, 189, 248, 0.4);
+                    transition: 0.3s;
+                }
+            </style>
 
             <div class="col-md-5">
                 <div class="card bg-light p-4 shadow-sm border-0 h-100">
@@ -887,9 +965,6 @@
     <div class="container text-center">
         <p class="mb-1 text-white-50 small">
             &copy; 2026 <strong>Adhe Putra Haryanto</strong>. All Rights Reserved.
-        </p>
-        <p class="mb-0 x-small text-muted" style="font-size: 0.8rem;">
-            Designed with <i class="fa-solid fa-heart text-danger mx-1"></i> by Adhe Putra
         </p>
     </div>
 </footer>
