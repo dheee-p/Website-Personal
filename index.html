@@ -3,6 +3,28 @@
 <html lang="id">
 <head>
     <style>
+        @media (max-width: 991px) {
+            #home {
+                min-height: auto !important;
+                padding: 80px 0 80px 0 !important; 
+            }
+
+            #home h1 {
+                margin-bottom: 0.5rem;
+            }
+
+            #biodata {
+                padding-top: 20px !important;
+                margin-top: 0 !important;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #home {
+                min-height: 100vh !important;
+                padding: 0;
+            }
+        }
         body {
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
@@ -194,7 +216,7 @@
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Adhe</title>
+    <title>Personal Web | Adhe Putra Haryanto</title>
     <link rel="icon" type="image/png" href="header1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap">
@@ -469,46 +491,39 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-midnight fixed-top shadow-sm">
-        <div class="container">
-            <div class="navbar-brand d-flex align-items-center">
-                <img src="foto.jpg" alt="Logo" class="img-zoomable" style="height:38px; width:38px; border-radius:50%; object-fit:cover; margin-right:8px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <a href="#home" class="text-decoration-none text-white fw-bold">Portofolio Digital</a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">
-                            <i class="fa-solid fa-house me-1"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle modern-nav-link" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-user me-1"></i> Biodata
-                        </a>
-                        <ul class="dropdown-menu glass-dropdown" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item sleek-item" href="#biodata"><i class="fa-solid fa-address-card text-primary"></i> Tentang Saya</a></li>
-                            <li><a class="dropdown-item sleek-item" href="#skills"><i class="fa-solid fa-star text-primary"></i> Keahlian</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">
-                            <i class="fa-solid fa-briefcase me-1"></i> Pengalaman
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <i class="fa-solid fa-envelope me-1"></i> Kontak
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container">
+        <div class="navbar-brand d-flex align-items-center">
+            <img src="foto.jpg" alt="Logo" class="img-zoomable" style="height:38px; width:38px; border-radius:50%; object-fit:cover; margin-right:8px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+            <a href="#home" class="text-decoration-none text-white fw-bold">Portofolio Digital</a>
         </div>
-    </nav>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><i class="fa-solid fa-house me-1"></i> Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#biodata"><i class="fa-solid fa-address-card me-1"></i> Tentang Saya</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills"><i class="fa-solid fa-star me-1"></i> Keahlian</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience"><i class="fa-solid fa-briefcase me-1"></i> Pengalaman</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="fa-solid fa-envelope me-1"></i> Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
     <button type="button" class="btn btn-primary btn-lg rounded-circle shadow" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
@@ -577,7 +592,7 @@
 </nav>
 
 <div class="main-content">
-    <header id="home" class="d-flex align-items-center" style="min-height: 100vh;">
+    <header id="home" class="d-flex align-items-center">
         <div class="container px-lg-5" style="position: relative; z-index: 1;">
             <div class="row align-items-center">
                 <div class="col-lg-7 text-center text-lg-start">
@@ -671,7 +686,6 @@
 
             <style>
                 .info-card-relax {
-                    /* Warna Midnight Blue yang rileks dan elegan */
                     background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
                     border-radius: 20px;
                     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -684,14 +698,14 @@
                     font-size: 0.7rem;
                     text-transform: uppercase;
                     font-weight: 700;
-                    color: #94a3b8; /* Warna abu-abu kebiruan agar tidak silau */
+                    color: #94a3b8; 
                     margin-bottom: 2px;
                     letter-spacing: 0.8px;
                 }
 
                 .value-relax {
                     font-weight: 600;
-                    color: #f8fafc; /* Warna putih tulang yang lembut di mata */
+                    color: #f8fafc; 
                     margin-bottom: 0;
                     font-size: 0.95rem;
                 }
@@ -701,7 +715,7 @@
                     padding: 4px 12px;
                     border-radius: 50px;
                     font-weight: 600;
-                    background: rgba(56, 189, 248, 0.15); /* Biru transparan */
+                    background: rgba(56, 189, 248, 0.15);
                     color: #7dd3fc;
                     border: 1px solid rgba(56, 189, 248, 0.2);
                     display: inline-block;
@@ -713,7 +727,7 @@
                     padding: 4px 12px;
                     border-radius: 50px;
                     font-weight: 600;
-                    background: rgba(34, 197, 94, 0.15); /* Hijau transparan */
+                    background: rgba(34, 197, 94, 0.15);    
                     color: #86efac;
                     border: 1px solid rgba(34, 197, 94, 0.2);
                     display: inline-block;
@@ -722,7 +736,7 @@
                 }
 
                 .text-cyan {
-                    color: #38bdf8 !important; /* Warna ikon biru muda yang kalem */
+                    color: #38bdf8 !important; 
                 }
 
                 .info-card-relax:hover {
@@ -989,3 +1003,4 @@
         </p>
     </div>
 </footer>
+
